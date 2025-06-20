@@ -139,6 +139,8 @@
             justify-content: space-between;
             align-items: center;
             min-height: 48px;
+            cursor: pointer;
+            user-select: none;
         }
         
         .dropdown-arrow {
@@ -237,8 +239,8 @@
                 </div>
             </div>
             
-            <div class="dropdown" onclick="toggleDropdown(this)">
-                <div class="dropdown-header">
+            <div class="dropdown">
+                <div class="dropdown-header" onclick="toggleDropdown(this.parentElement)">
                     <span>1.75 x per hour worked — Time off in Lieu</span>
                     <span class="dropdown-arrow">⌄</span>
                 </div>
